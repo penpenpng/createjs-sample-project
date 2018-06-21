@@ -1,1 +1,2 @@
-import window_load_createjs from 'window_load_createjs'
+import createjs from 'createjs'
+console.log(createjs)

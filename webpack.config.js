@@ -1,4 +1,3 @@
-const webpack = require("webpack")
 const path = require("path")
 
 module.exports = [
@@ -13,17 +12,17 @@ module.exports = [
     module: {
       loaders: [
         {
-          test: /createjs/,
-          loader: 'imports-loader?this=>window!exports-loader?window_load_createjs'
-        }
+          test: /node_modules[/\\]createjs/,
+          loaders: [
+            'imports-loader?this=>window',
+            'exports-loader?window.createjs'
+          ]
+        },
       ],
     },
-    plugins: [
-      new webpack.ProvidePlugin({'window_load_createjs': 'window_load_createjs'}),
-    ],
     resolve: {
       alias: {
-        window_load_createjs: path.join(__dirname, 'node_modules', 'createjs', 'builds', '1.0.0', 'createjs.min.js'),
+        createjs: 'createjs/builds/1.0.0/createjs.js'
       }
     }
   }
