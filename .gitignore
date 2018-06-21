@@ -1,0 +1,7 @@
+# npm
+package-lock.json
+npm-debug.log
+node_modules/
+
+# bundled file
+dist/bundled/*

@@ -1,0 +1,30 @@
+{
+  "name": "powa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --watch --progress"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "createjs": "^1.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015-riot": "^1.1.0",
+    "browser-sync": "^2.23.6",
+    "exports-loader": "^0.7.0",
+    "imports-loader": "^0.8.0",
+    "webpack": "^3.11.0"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
+}
