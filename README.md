@@ -3,6 +3,7 @@
 A template of project for [Createjs](https://createjs.com/) which is a framework on Javascript to develop game contents.
 
 ## Demo
+![demo](https://github.com/hosscine/createjs-sample-project/wiki/images/createjs.PNG)
 
 ## Requirement
 Only requires git and npm.
